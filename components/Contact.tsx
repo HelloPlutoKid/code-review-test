@@ -14,7 +14,8 @@ export default function Contact() {
               href="https://www.youtube.com/@dingcodingco"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-center animate-scaleIn opacity-0 animation-delay-400"
+              className="bg-red-600 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-center animate-scaleIn"
+              style={{ animationDelay: '0.4s' }}
             >
               <div className="text-5xl mb-4 animate-bounce-slow">📺</div>
               <h3 className="text-2xl font-bold mb-2">YouTube</h3>
@@ -23,7 +24,8 @@ export default function Contact() {
 
             <a
               href="mailto:contact@dingcodingco.com"
-              className="bg-purple-600 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-center animate-scaleIn opacity-0 animation-delay-600"
+              className="bg-purple-600 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-center animate-scaleIn"
+              style={{ animationDelay: '0.6s' }}
             >
               <div className="text-5xl mb-4 animate-bounce-slow">✉️</div>
               <h3 className="text-2xl font-bold mb-2">Email</h3>
@@ -34,7 +36,8 @@ export default function Contact() {
               href="https://github.com/dingcodingco"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-800 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-center animate-scaleIn opacity-0 animation-delay-800"
+              className="bg-gray-800 text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-center animate-scaleIn"
+              style={{ animationDelay: '0.8s' }}
             >
               <div className="text-5xl mb-4 animate-bounce-slow">💻</div>
               <h3 className="text-2xl font-bold mb-2">GitHub</h3>

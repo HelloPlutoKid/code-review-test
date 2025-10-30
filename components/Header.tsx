@@ -16,22 +16,22 @@ export default function Header() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-8">
-            <li className="animate-slideInRight opacity-0">
+            <li className="animate-slideInRight">
               <Link href="#about" className="hover:text-purple-200 transition-all hover:scale-110 inline-block">
                 소개
               </Link>
             </li>
-            <li className="animate-slideInRight opacity-0 animation-delay-200">
+            <li className="animate-slideInRight" style={{ animationDelay: '0.2s' }}>
               <Link href="#videos" className="hover:text-purple-200 transition-all hover:scale-110 inline-block">
                 영상
               </Link>
             </li>
-            <li className="animate-slideInRight opacity-0 animation-delay-400">
+            <li className="animate-slideInRight" style={{ animationDelay: '0.4s' }}>
               <Link href="#contact" className="hover:text-purple-200 transition-all hover:scale-110 inline-block">
                 연락하기
               </Link>
             </li>
-            <li className="animate-slideInRight opacity-0 animation-delay-600">
+            <li className="animate-slideInRight" style={{ animationDelay: '0.6s' }}>
               <a
                 href="https://www.youtube.com/@dingcodingco"
                 target="_blank"

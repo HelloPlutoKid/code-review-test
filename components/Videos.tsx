@@ -42,7 +42,7 @@ export default function Videos() {
           {videos.map((video, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all hover:scale-105 cursor-pointer animate-scaleIn opacity-0 animation-delay-${index < 3 ? index * 200 : (index - 3) * 200}`}
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all hover:scale-105 cursor-pointer animate-scaleIn"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <img
@@ -57,7 +57,7 @@ export default function Videos() {
             </div>
           ))}
         </div>
-        <div className="text-center mt-12 animate-fadeInUp opacity-0 animation-delay-800">
+        <div className="text-center mt-12 animate-fadeInUp" style={{ animationDelay: '0.9s' }}>
           <a
             href="https://www.youtube.com/@dingcodingco"
             target="_blank"

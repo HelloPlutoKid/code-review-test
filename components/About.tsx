@@ -7,7 +7,7 @@ export default function About() {
         </h2>
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn opacity-0">
+            <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn">
               <div className="text-4xl mb-4 animate-float">💻</div>
               <h3 className="text-2xl font-bold mb-4 text-gray-800">코딩 튜토리얼</h3>
               <p className="text-gray-700">
@@ -16,7 +16,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn opacity-0 animation-delay-200">
+            <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn" style={{ animationDelay: '0.2s' }}>
               <div className="text-4xl mb-4 animate-float">🚀</div>
               <h3 className="text-2xl font-bold mb-4 text-gray-800">개발 팁 & 트릭</h3>
               <p className="text-gray-700">
@@ -25,7 +25,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn opacity-0 animation-delay-400">
+            <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn" style={{ animationDelay: '0.4s' }}>
               <div className="text-4xl mb-4 animate-float">📱</div>
               <h3 className="text-2xl font-bold mb-4 text-gray-800">트렌드 분석</h3>
               <p className="text-gray-700">
@@ -34,7 +34,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-pink-100 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn opacity-0 animation-delay-600">
+            <div className="bg-gradient-to-br from-pink-100 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-scaleIn" style={{ animationDelay: '0.6s' }}>
               <div className="text-4xl mb-4 animate-float">🎯</div>
               <h3 className="text-2xl font-bold mb-4 text-gray-800">프로젝트 실습</h3>
               <p className="text-gray-700">
