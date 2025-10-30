@@ -33,21 +33,22 @@ export default function Videos() {
   ];
 
   return (
-    <section id="videos" className="py-20 bg-gradient-to-b from-purple-50 to-blue-50">
+    <section id="videos" className="py-20 bg-gradient-to-b from-purple-50 to-blue-50 overflow-hidden">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800 animate-fadeInUp">
           인기 영상
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {videos.map((video, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all hover:scale-105 cursor-pointer"
+              className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all hover:scale-105 cursor-pointer animate-scaleIn opacity-0 animation-delay-${index < 3 ? index * 200 : (index - 3) * 200}`}
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               <img
                 src={video.thumbnail}
                 alt={video.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-800">{video.title}</h3>
@@ -56,12 +57,12 @@ export default function Videos() {
             </div>
           ))}
         </div>
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 animate-fadeInUp opacity-0 animation-delay-800">
           <a
             href="https://www.youtube.com/@dingcodingco"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-all hover:scale-105 shadow-lg"
+            className="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-all hover:scale-110 hover:shadow-2xl shadow-lg"
           >
             더 많은 영상 보기
           </a>
